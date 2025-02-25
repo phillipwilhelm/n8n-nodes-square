@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-square",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Node to connect to Square API",
   "keywords": [
     "n8n-community-node-package"
