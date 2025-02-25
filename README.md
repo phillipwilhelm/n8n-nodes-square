@@ -1,46 +1,79 @@
 ![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
 
-# n8n-nodes-starter
+# n8n-nodes-square
 
-This repo contains example nodes to help you get started building your own custom integrations for [n8n](n8n.io). It includes the node linter and other dependencies.
+This is a Square integration node for [n8n](n8n.io) that allows you to interact with the Square API. With this node, you can automate your Square-related workflows and integrate Square's functionality into your n8n automations.
 
-To make your custom node available to the community, you must create it as an npm package, and [submit it to the npm registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry).
+## Features
+
+- Connect to Square API securely
+- Manage Square transactions and payments
+- Integrate Square functionality into your n8n workflows
+- Built with TypeScript for better type safety and developer experience
 
 ## Prerequisites
 
 You need the following installed on your development machine:
 
 * [git](https://git-scm.com/downloads)
-* Node.js and pnpm. Minimum version Node 18. You can find instructions on how to install both using nvm (Node Version Manager) for Linux, Mac, and WSL [here](https://github.com/nvm-sh/nvm). For Windows users, refer to Microsoft's guide to [Install NodeJS on Windows](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-windows).
-* Install n8n with:
-  ```
+* Node.js (version 18 or later) and pnpm
+* n8n installed globally:
+  ```bash
   pnpm install n8n -g
   ```
-* Recommended: follow n8n's guide to [set up your development environment](https://docs.n8n.io/integrations/creating-nodes/build/node-development-environment/).
+* A Square developer account and API credentials
 
-## Using this starter
+## Installation
 
-These are the basic steps for working with the starter. For detailed guidance on creating and publishing nodes, refer to the [documentation](https://docs.n8n.io/integrations/creating-nodes/).
+To install this node in your n8n instance:
 
-1. [Generate a new repository](https://github.com/n8n-io/n8n-nodes-starter/generate) from this template repository.
-2. Clone your new repo:
+```bash
+pnpm install n8n-nodes-square
+```
+
+## Usage
+
+1. Create a Square developer account if you haven't already
+2. Obtain your Square API credentials
+3. Add the Square credentials in n8n
+4. Use the Square node in your workflows
+
+## Development Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RostamMahabadi/n8n-nodes-square.git
    ```
-   git clone https://github.com/<your organization>/<your-repo-name>.git
+2. Install dependencies:
+   ```bash
+   pnpm install
    ```
-3. Run `pnpm i` to install dependencies.
-4. Open the project in your editor.
-5. Browse the examples in `/nodes` and `/credentials`. Modify the examples, or replace them with your own nodes.
-6. Update the `package.json` to match your details.
-7. Run `pnpm lint` to check for errors or `pnpm lintfix` to automatically fix errors when possible.
-8. Test your node locally. Refer to [Run your node locally](https://docs.n8n.io/integrations/creating-nodes/test/run-node-locally/) for guidance.
-9. Replace this README with documentation for your node. Use the [README_TEMPLATE](README_TEMPLATE.md) to get started.
-10. Update the LICENSE file to use your details.
-11. [Publish](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry) your package to npm.
+3. Build the project:
+   ```bash
+   pnpm build
+   ```
+4. Link to your n8n installation for testing
 
-## More information
+## Available Scripts
 
-Refer to our [documentation on creating nodes](https://docs.n8n.io/integrations/creating-nodes/) for detailed information on building your own nodes.
+- `pnpm build`: Build the project
+- `pnpm dev`: Watch for changes and rebuild
+- `pnpm format`: Format the code
+- `pnpm lint`: Check for code issues
+- `pnpm lintfix`: Automatically fix code issues when possible
+
+## Support
+
+If you encounter any issues or have questions, please file them in the [issues section](https://github.com/RostamMahabadi/n8n-nodes-square/issues) of this repository.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-[MIT](https://github.com/n8n-io/n8n-nodes-starter/blob/master/LICENSE.md)
+[MIT](LICENSE.md)
+
+## Author
+
+Rostam Mahabadi (RostamMahabadi@gmail.com)
