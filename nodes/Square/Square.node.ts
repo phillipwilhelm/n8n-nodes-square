@@ -15,8 +15,8 @@ export class Square implements INodeType {
   description: INodeTypeDescription = {
     displayName: 'Square',
     name: 'square',
-    icon: 'file:square.svg',
-    group: ['transform'],
+    icon: 'file:Square.svg',
+    group: ['output', 'input'],
     version: 1,
     subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
     description: 'Consume Square API',

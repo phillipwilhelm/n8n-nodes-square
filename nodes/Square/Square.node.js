@@ -19,7 +19,7 @@ class Square {
         this.description = {
             displayName: 'Square',
             name: 'square',
-            icon: 'file:square.svg',
+            icon: 'file:Square.svg',
             group: ['transform'],
             version: 1,
             subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
