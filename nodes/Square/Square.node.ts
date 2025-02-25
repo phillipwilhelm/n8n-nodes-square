@@ -4,11 +4,14 @@ import type {
   INodeType,
   INodeTypeDescription,
   IDataObject,
+  NodeConnectionType,
+  INodeInputConfiguration,
+  INodeOutputConfiguration,
 } from 'n8n-workflow';
 
-import { squareApiRequest, squareApiRequestAllItems } from './helpers';
-
 import { NodeOperationError } from 'n8n-workflow';
+
+import { squareApiRequest, squareApiRequestAllItems } from './helpers';
 import { customerOperations, customerFields } from './descriptions/CustomerOperations';
 import { invoiceOperations, invoiceFields } from './descriptions/InvoiceOperations';
 export class Square implements INodeType {
@@ -16,15 +19,16 @@ export class Square implements INodeType {
     displayName: 'Square',
     name: 'square',
     icon: 'file:Square.svg',
-    group: ['tool'],
+    group: ['transform'],
     version: 1,
     subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
     description: 'Consume Square API',
     defaults: {
       name: 'Square',
     },
-    inputs: ['main'],
-    outputs: ['main'],
+    inputs: ['main'] as Array<NodeConnectionType | INodeInputConfiguration>,
+    outputs: ['main'] as Array<NodeConnectionType | INodeOutputConfiguration>,
+    usableAsTool: true,
     credentials: [
       {
         name: 'squareApi',

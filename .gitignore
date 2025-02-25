@@ -8,3 +8,4 @@ yarn.lock
 .vscode/launch.json
 .env
 tsconfig.tsbuildinfo
+pnpm-lock.yaml

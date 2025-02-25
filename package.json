@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-square",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Node to connect to Square API",
   "keywords": [
     "n8n-community-node-package"
@@ -45,10 +45,10 @@
   "devDependencies": {
     "@types/node": "^22.13.5",
     "@typescript-eslint/parser": "^8.3.0",
-    "eslint": "^8.3.0",
+    "eslint": "^8.57.1",
     "eslint-plugin-n8n-nodes-base": "^1.16.1",
     "gulp": "^5.0.0",
-    "n8n-workflow": "^0.116.0",
+    "n8n-workflow": "^1.78.0",
     "prettier": "^3.3.2",
     "typescript": "^5.5.3"
   },
