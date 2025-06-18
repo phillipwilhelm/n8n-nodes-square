@@ -1,18 +1,19 @@
 {
 	"node": "n8n-nodes-base.square",
-	"nodeVersion": 1.0,
+	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
-	"categories": ["Payment", "Finance"],
+	"categories": ["Finance & Accounting", "Sales & Marketing"],
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://developer.squareup.com/docs"
+				"url": "https://developer.squareup.com/docs/build-basics/access-tokens"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://developer.squareup.com/reference/square"
+				"url": "https://developer.squareup.com/docs"
 			}
 		]
-	}
+	},
+	"alias": ["Square", "Payment", "POS", "Point of Sale"]
 }
